@@ -14,7 +14,7 @@ See the [project wiki](http://jasonharley2o.com/wiki/doku.php?id=start). This is
 * Track and GTFSView are used to see area of a GTFS you've read and skipped over. It can be disabled to speed GT up.
 
 # GameTools2 WIP Supported Formats #
-* Hotel Dusk - uncommpress text and some image files including animations.
+* Hotel Dusk - uncompress text and some image files including animations.
 * Last Window - may open some images, but does not work for animations.
 * Runaway: The Dream of the Turtle (Nintendo DS) - Sprites
 * TimeSplitters 2 (Xbox, Gamecube, PS2) - can load some textures, models and parts of levels.
