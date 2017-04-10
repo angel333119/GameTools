@@ -103,6 +103,23 @@ namespace WiiSpeakExplorer {
 
                 binaryIsoIn.Close();
                 binaryIsoOut.Close();
+
+                //--
+
+                foreach(USB.URB urb in listURB) {
+                    string line = urb.ToString();
+
+                    WiiSpeak.Message msg = null;
+                    if (urb.remaining.Length == 10) {
+                        msg = new WiiSpeak.Message(urb.remaining);
+                        line += string.Format(" {0,14} = {1}", msg.Type.ToString(), GT.ByteArrayToString(urb.remaining, " "));
+                    } else if(urb.remaining.Length > 0 && urb.remaining.Length < 10) {
+                        line += string.Format(" = {0}", GT.ByteArrayToString(urb.remaining, " "));
+                    }
+
+                    listBoxMessages.Items.Add(line);
+                }
+
             }
         }
     }

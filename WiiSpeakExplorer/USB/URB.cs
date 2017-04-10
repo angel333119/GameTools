@@ -37,6 +37,14 @@ namespace WiiSpeakExplorer {
                 return EndpointDirection.Out;
             }
 
+            public override string ToString() {
+                return string.Format("{0,11} {1,-3} bmReq:{2:X2} bReq:{3:X2} wVal:{4:X4} wInd:{5:X4} wLen:{6:X4}",
+                    transfer_type.ToString(),
+                    GetEndpointDirection().ToString(),
+                    bmRequestType, bRequest, wValue, wIndex, wLength
+                );
+            }
+
         }
     }
 }

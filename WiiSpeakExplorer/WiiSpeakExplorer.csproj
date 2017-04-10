@@ -58,6 +58,7 @@
     <Compile Include="USB\Windows.cs" />
     <Compile Include="USB\Linux.cs" />
     <Compile Include="USB\URB.cs" />
+    <Compile Include="WiiSpeak\Message.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
